@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			onload = function(){
+				
+				var c = document.getElementById("myCanvas");
+				var context = c.getContext("2d");
+				
+//				context.fillStyle = "red";
+//				context.beginPath();
+//				context.arc(50,50,50,0,Math.PI*2,true);
+//				context.closePath();
+//				context.fill(); 
+				for(var i=0 ; i<15 ; i++){
+					context.strokeStyle = "#FF00FF";
+					context.beginPath();
+					context.arc(0,200,i*10,0,Math.PI*3/2,true);
+					//context.closePath();
+					context.stroke(); 
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="300px" height="200px" style="background: #eee;"></canvas>
+	</body>
+</html>

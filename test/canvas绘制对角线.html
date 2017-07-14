@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			onload = function(){
+				var c = document.getElementById("myCanvas");
+				var context = c.getContext("2d");
+				context.moveTo(0,0);
+				context.lineTo(200,100);
+				context.stroke();
+			}
+		</script>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="200px" height="100px" style="background: #eee;"></canvas>
+	</body>
+</html>

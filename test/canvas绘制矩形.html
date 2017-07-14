@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			onload = function(){
+				var c = document.getElementById("myCanvas");
+				var context = c.getContext("2d");
+				context.fillStyle = "#FF00FF";
+				context.fillRect(0,0,200,100);
+				context.strokeStyle = "#FFF";
+				context.strokeRect(0,0,100,50);
+			}
+		</script>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="300px" height="150px" style="border: 1px solid #000;"></canvas>
+	</body>
+</html>
